@@ -4,4 +4,7 @@ import App from './App.js'
 import router from "./router/router.ts";
 import 'vant/lib/index.css';
 import vant from 'vant'
-      createApp(App).use(router).use(vant).mount('#app')
+import { createPinia } from 'pinia';
+
+const pinia = createPinia()
+      createApp(App).use(router).use(vant).use(pinia).mount('#app')

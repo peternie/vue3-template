@@ -2,10 +2,8 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueJsxPlugin from "@vitejs/plugin-vue-jsx";
 import AutoImport from 'unplugin-auto-import/vite'
-import VueDevTools from 'vite-plugin-vue-devtools'
 import tailwindcss from 'tailwindcss'
 import postcsspxtoviewport from 'postcss-px-to-viewport'
-import {Config} from 'tailwindcss'
 export default defineConfig({
   plugins: [vue(),vueJsxPlugin(),AutoImport({
     imports:[
@@ -13,7 +11,7 @@ export default defineConfig({
         "vue-router",
         'pinia'
     ],
-  }),VueDevTools(),
+  }),
   ],
   css:{
      postcss:{
