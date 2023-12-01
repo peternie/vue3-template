@@ -7,7 +7,10 @@ export default defineComponent({
           return ()=>(
               <div class='bg-fuchsia-400 w-[375px]'>
                 page
+                <van-button>123</van-button>
                 </div>
+
+                
           )
       }
 })
