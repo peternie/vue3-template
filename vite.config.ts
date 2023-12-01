@@ -12,7 +12,14 @@ export default defineConfig({
     ],
   }),VueDevTools(),
   ],
-
+  server:{
+      proxy:{
+        '/':{
+           target:"http://localhost:3000",
+           changeOrigin:true,
+        }
+      }
+  },
   esbuild: {
     jsxFactory: 'h',
     jsxFragment: 'Fragment',
